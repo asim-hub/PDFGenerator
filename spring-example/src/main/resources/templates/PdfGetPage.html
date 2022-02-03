@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<style>
+    body {
+        background: powderblue;
+        background-size: 1100% 1100%;
+        margin-top: 100px;
+    }
+
+    @keyframes gradient {
+        0% {
+            background-position: 0 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0 50%;
+        }
+    }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>PDF Generator</title>
+</head>
+<body>
+<div align="center">
+    <h1 style="color:black" class="text-light">Get your free PDF</h1>
+    <div class="btn-group mt-2 mb-4" role="group" aria-label="actionButtons">
+        <a th:href="@{/pdf/generate}" style="color:black" class="d-block btn btn-outline-light" download><i class="fas fa-file-download mr-2"></i>Download PDF</a>
+    </div>
+</div>>
+</body>
+</html>
